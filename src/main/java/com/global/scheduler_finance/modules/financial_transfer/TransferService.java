@@ -21,6 +21,7 @@ public class TransferService {
 
     public Transfer create(CreateDTO createDTO) {
         LocalDate currentDate = Helpers.getCurrentLocalDate();
+        System.out.println("currentDate = " + currentDate);
         LocalDate appointmentDate = Helpers.convertStringToLocalDate(createDTO.getDataTransferencia());
 
         BigDecimal taxa = taxService.calculateTax(currentDate, appointmentDate, createDTO.getValor());

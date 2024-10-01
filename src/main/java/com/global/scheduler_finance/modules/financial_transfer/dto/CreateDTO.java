@@ -25,7 +25,7 @@ public class CreateDTO {
         return valor;
     }
 
-    public void setValor(@NotNull @NotBlank(message = "Informe o valor da transferência") BigDecimal valor) {
+    public void setValor(BigDecimal valor) {
         this.valor = valor;
     }
 
@@ -33,7 +33,7 @@ public class CreateDTO {
         return dataTransferencia;
     }
 
-    public void setDataTransferencia(@NotNull @NotBlank(message = "Informe a data da transferência EX: AAAA-MM-DD") String dataTransferencia) {
+    public void setDataTransferencia(String dataTransferencia) {
         this.dataTransferencia = dataTransferencia;
     }
 
@@ -41,7 +41,7 @@ public class CreateDTO {
         return contaOrigem;
     }
 
-    public void setContaOrigem(@NotBlank @NotBlank(message = "Informe a conta origem") String contaOrigem) {
+    public void setContaOrigem(String contaOrigem) {
         this.contaOrigem = contaOrigem;
     }
 
@@ -49,7 +49,7 @@ public class CreateDTO {
         return contaDestino;
     }
 
-    public void setContaDestino(@NotBlank @NotBlank(message = "Informe a conta destino") String contaDestino) {
+    public void setContaDestino(String contaDestino) {
         this.contaDestino = contaDestino;
     }
 }
